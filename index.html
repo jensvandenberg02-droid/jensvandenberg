@@ -3,555 +3,588 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Jens van den Berg Fotografie — Sport, evenement en commerciële fotografie vanuit België. Rauw, authentiek en stijlvol." />
-  <title>Jens van den Berg Fotografie</title>
-
-  <!-- Google Fonts -->
+  <meta name="description" content="Jens van den Berg Fotografie — Sport, evenement en commerciële fotografie vanuit België. Rauw, authentiek, stijlvol." />
+  <title>Jens van den Berg — Fotografie</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet" />
-
-  <!-- Stylesheet -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:ital,wght@0,400;0,700;1,400&family=Barlow+Condensed:ital,wght@0,400;0,700;1,900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-
-  <!-- Favicon placeholder: replace with your actual favicon -->
-  <!-- <link rel="icon" href="assets/favicon.ico" /> -->
 </head>
 <body>
 
-  <!-- Custom cursor -->
-  <div class="cursor" id="cursor"></div>
-  <div class="cursor-ring" id="cursor-ring"></div>
+<!-- ══════════════════════════════
+     LOADING SCREEN
+══════════════════════════════ -->
+<div id="loader">
+  <div class="loader-name">
+    <span>J</span><span>E</span><span>N</span><span>S</span>
+    <span>&nbsp;</span>
+    <span>V</span><span>A</span><span>N</span>
+    <span>&nbsp;</span>
+    <span>D</span><span>E</span><span>N</span>
+    <span>&nbsp;</span>
+    <span>B</span>
+  </div>
+  <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+  <p class="loader-sub">Fotografie — België</p>
+</div>
 
-  <!-- ══════════════════════════════════════
-       NAVIGATIE
-  ══════════════════════════════════════ -->
-  <nav class="nav" id="main-nav">
-    <!-- Logo: vervang door <img src="assets/logo.svg" alt="Jens van den Berg Fotografie"> als je logo hebt -->
-    <a href="#home" class="nav-logo">
-      Jens <span>van den Berg</span>
-    </a>
+<!-- ══════════════════════════════
+     NAVIGATIE
+══════════════════════════════ -->
+<nav class="nav" id="nav">
+  <a href="#home" class="nav-logo">JvdB<span class="accent">.</span></a>
+  <ul class="nav-links">
+    <li><a href="#diensten">Diensten</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#over">Over</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="nav-burger" id="burger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
 
-    <ul class="nav-links">
-      <li><a href="#diensten">Diensten</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#over">Over mij</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+<div class="mobile-menu" id="mobile-menu">
+  <button class="mobile-close" id="mobile-close">✕</button>
+  <a href="#diensten">Diensten</a>
+  <a href="#portfolio">Portfolio</a>
+  <a href="#over">Over</a>
+  <a href="#contact">Contact</a>
+</div>
 
-    <div class="nav-social">
-      <a href="https://www.instagram.com/jensvandenbergfotografie" target="_blank" rel="noopener">Instagram</a>
-      <a href="https://www.tiktok.com/@jensvandenbergfotografie" target="_blank" rel="noopener">TikTok</a>
+<!-- ══════════════════════════════
+     HERO
+══════════════════════════════ -->
+<section class="hero" id="home">
+  <div class="hero-stripes"></div>
+
+  <div class="hero-photo">
+    <!--
+      VERVANG door: <img src="assets/hero.jpg" alt="Hero foto" />
+      Aanbevolen: 2400 × 1600px, JPG/WebP
+    -->
+    <div class="hero-photo-placeholder">
+      [ hero foto — 2400 × 1600 px ]
     </div>
-
-    <button class="nav-burger" id="burger" aria-label="Menu openen">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-  </nav>
-
-  <!-- Mobiel menu overlay -->
-  <div class="nav-mobile" id="mobile-menu">
-    <button class="nav-mobile-close" id="mobile-close" aria-label="Menu sluiten">✕</button>
-    <a href="#diensten" class="mobile-link">Diensten</a>
-    <a href="#portfolio" class="mobile-link">Portfolio</a>
-    <a href="#over" class="mobile-link">Over mij</a>
-    <a href="#contact" class="mobile-link">Contact</a>
   </div>
 
-  <!-- ══════════════════════════════════════
-       HERO
-  ══════════════════════════════════════ -->
-  <section class="hero" id="home">
-    <div class="hero-bg"></div>
-    <div class="hero-grain"></div>
+  <div class="hero-slash"></div>
 
-    <div class="hero-photo-placeholder">
-      <!--
-        Vervang dit blok door een echte afbeelding:
-        <img class="hero-img-slot" src="assets/hero.jpg" alt="Hero foto Jens van den Berg" />
-
-        Aanbevolen formaat: 2400 x 1600px (landschap), JPG/WebP
-      -->
-      <div class="hero-img-fallback">
-        Voeg hier uw hero foto toe &nbsp;|&nbsp; aanbevolen: 2400 × 1600 px
-      </div>
+  <div class="hero-content">
+    <div class="hero-label">
+      <span>Sport &amp; Evenementenfotografie — België</span>
     </div>
 
-    <div class="hero-content">
-      <div class="hero-eyebrow">
-        <span>Sport &amp; Evenementenfotografie</span>
-      </div>
-      <h1 class="hero-title">
-        Het moment.<br />
-        <em>Gevangen.</em>
-      </h1>
+    <h1 class="hero-title">
+      HET<br />
+      MO<span class="outline">MENT</span><br />
+      <span class="red">GEVANGEN</span>
+    </h1>
+
+    <div class="hero-bottom">
       <p class="hero-sub">
-        Authentieke beelden die verder gaan dan het oppervlak — voor sportclubs, bedrijven en events door heel België.
+        Authentieke beelden die verder gaan dan het oppervlak.<br />
+        Sportclubs, bedrijven, events — door heel België.
       </p>
-      <div class="hero-cta">
-        <a href="#portfolio" class="btn-primary">Bekijk portfolio &rarr;</a>
-        <a href="#contact" class="btn-outline">Vraag een offerte</a>
+      <div class="hero-ctas">
+        <a href="#portfolio" class="btn btn-red">Bekijk werk →</a>
+        <a href="#contact" class="btn btn-ghost">Offerte aanvragen</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     TICKER
+══════════════════════════════ -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-inner" id="ticker-inner">
+    <span class="ticker-item">Sportfotografie</span>
+    <span class="ticker-item">Evenementenfotografie</span>
+    <span class="ticker-item">Commercieel</span>
+    <span class="ticker-item">Sony A7 IV</span>
+    <span class="ticker-item">Sigma 70-200mm</span>
+    <span class="ticker-item">250+ opdrachten</span>
+    <span class="ticker-item">Rauw & Authentiek</span>
+    <span class="ticker-item">Sportfotografie</span>
+    <span class="ticker-item">Evenementenfotografie</span>
+    <span class="ticker-item">Commercieel</span>
+    <span class="ticker-item">Sony A7 IV</span>
+    <span class="ticker-item">Sigma 70-200mm</span>
+    <span class="ticker-item">250+ opdrachten</span>
+    <span class="ticker-item">Rauw & Authentiek</span>
+  </div>
+</div>
+
+<!-- ══════════════════════════════
+     STATS
+══════════════════════════════ -->
+<div class="stats reveal">
+  <div class="stat">
+    <div class="stat-index">01</div>
+    <div class="stat-num">250<span class="stat-suffix">+</span></div>
+    <div class="stat-label">Opdrachten</div>
+  </div>
+  <div class="stat">
+    <div class="stat-index">02</div>
+    <div class="stat-num">5</div>
+    <div class="stat-label">Jaar ervaring</div>
+  </div>
+  <div class="stat">
+    <div class="stat-index">03</div>
+    <div class="stat-num">3</div>
+    <div class="stat-label">Enterprise klanten</div>
+  </div>
+  <div class="stat">
+    <div class="stat-index">04</div>
+    <div class="stat-num">BE</div>
+    <div class="stat-label">Heel het land</div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════
+     DIENSTEN
+══════════════════════════════ -->
+<section class="services" id="diensten">
+  <div class="section-header reveal">
+    <div>
+      <p class="section-kicker">// wat ik doe</p>
+      <h2 class="section-title">DIENSTEN<br /><span class="stroke">OP MAAT</span></h2>
+    </div>
+    <a href="#contact" class="section-link">Neem contact op →</a>
+  </div>
+
+  <div class="services-list">
+    <div class="service reveal">
+      <div class="service-num">01</div>
+      <div class="service-body">
+        <h3 class="service-name">SPORTFOTOGRAFIE</h3>
+        <p class="service-desc">Voetbal, triatlon, wielrennen, atletiek — de intensiteit en emotie gevangen op het beslissende moment. Sony A7 IV + Sigma 70-200mm f/2.8.</p>
+      </div>
+      <div class="service-price"><strong>Op aanvraag</strong>per shoot</div>
+      <span class="service-arrow">↗</span>
+    </div>
+
+    <div class="service reveal">
+      <div class="service-num">02</div>
+      <div class="service-body">
+        <h3 class="service-name">EVENEMENTENFOTOGRAFIE</h3>
+        <p class="service-desc">Bedrijfsevents, galas, productlanceringen, teambuildings. Documentair en stijlvol — uw verhaal in beeld gebracht.</p>
+      </div>
+      <div class="service-price"><strong>Op aanvraag</strong>per event</div>
+      <span class="service-arrow">↗</span>
+    </div>
+
+    <div class="service reveal">
+      <div class="service-num">03</div>
+      <div class="service-body">
+        <h3 class="service-name">COMMERCIËLE FOTOGRAFIE</h3>
+        <p class="service-desc">Campagnes, social media content, advertenties. Beelden die uw merk versterken en uw doelgroep raken.</p>
+      </div>
+      <div class="service-price"><strong>Op aanvraag</strong>per project</div>
+      <span class="service-arrow">↗</span>
+    </div>
+
+    <div class="service reveal">
+      <div class="service-num">04</div>
+      <div class="service-body">
+        <h3 class="service-name">OP MAAT</h3>
+        <p class="service-desc">Eigen concept? Specifieke nood? Ik luister en werk een aanpak op maat uit. Vrijblijvend gesprek, altijd mogelijk.</p>
+      </div>
+      <div class="service-price"><strong>Op aanvraag</strong>maatwerk</div>
+      <span class="service-arrow">↗</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     PORTFOLIO
+══════════════════════════════ -->
+<section class="portfolio" id="portfolio">
+  <div class="portfolio-header">
+    <div class="reveal">
+      <p class="section-kicker">// selectie van werk</p>
+      <h2 class="section-title">PORTFOLIO</h2>
+    </div>
+    <div class="portfolio-filter reveal">
+      <button class="filter-btn active" onclick="filter('all',this)">Alles</button>
+      <button class="filter-btn" onclick="filter('sport',this)">Sport</button>
+      <button class="filter-btn" onclick="filter('event',this)">Events</button>
+      <button class="filter-btn" onclick="filter('commercial',this)">Commercieel</button>
+    </div>
+  </div>
+
+  <!--
+    FOTO'S: vervang elke .p-placeholder div door:
+    <img src="assets/portfolio/naam.jpg" alt="beschrijving" />
+    Formaten aanbevolen:
+      item 1 (groot): 1600 × 900px
+      overige: 800 × 600px
+  -->
+  <div class="portfolio-grid" id="pgrid">
+
+    <div class="p-item" data-cat="sport">
+      <div class="p-placeholder">
+        <div class="p-placeholder-icon">▣</div>
+        <span class="p-placeholder-txt">Sport — groot / 1600 × 900</span>
+      </div>
+      <div class="p-cat-label">Sport</div>
+      <div class="p-overlay">
+        <span class="p-overlay-cat">// sport</span>
+        <span class="p-overlay-title">Sportfotografie</span>
       </div>
     </div>
 
-    <div class="hero-scroll">
-      <div class="hero-scroll-line"></div>
-      <span>Scroll</span>
-    </div>
-  </section>
-
-  <!-- ══════════════════════════════════════
-       STATS BAR
-  ══════════════════════════════════════ -->
-  <section class="stats-bar">
-    <div class="stats-grid">
-      <div class="stat-item reveal">
-        <div class="stat-number">250<span style="font-size:1.5rem">+</span></div>
-        <div class="stat-label">Opdrachten</div>
+    <div class="p-item" data-cat="event">
+      <div class="p-placeholder">
+        <div class="p-placeholder-icon">▣</div>
+        <span class="p-placeholder-txt">Event / 800 × 600</span>
       </div>
-      <div class="stat-item reveal" style="transition-delay:0.1s">
-        <div class="stat-number">5</div>
-        <div class="stat-label">Jaar ervaring</div>
-      </div>
-      <div class="stat-item reveal" style="transition-delay:0.2s">
-        <div class="stat-number">3</div>
-        <div class="stat-label">Vaste klanten (enterprise)</div>
-      </div>
-      <div class="stat-item reveal" style="transition-delay:0.3s">
-        <div class="stat-number">100<span style="font-size:1.5rem">%</span></div>
-        <div class="stat-label">Op locatie</div>
+      <div class="p-cat-label">Event</div>
+      <div class="p-overlay">
+        <span class="p-overlay-cat">// event</span>
+        <span class="p-overlay-title">Evenement</span>
       </div>
     </div>
-  </section>
 
-  <!-- ══════════════════════════════════════
-       DIENSTEN
-  ══════════════════════════════════════ -->
-  <section class="services" id="diensten">
-    <div class="container">
-      <div class="services-header reveal">
-        <div class="section-label"><span>Wat ik doe</span></div>
-        <h2 class="section-title">Diensten op <em>maat</em></h2>
+    <div class="p-item" data-cat="sport">
+      <div class="p-placeholder">
+        <div class="p-placeholder-icon">▣</div>
+        <span class="p-placeholder-txt">Sport / 800 × 600</span>
       </div>
-
-      <div class="services-grid">
-
-        <!-- Dienst 1: Sport -->
-        <div class="service-card reveal">
-          <div class="service-num">01</div>
-          <h3 class="service-name">Sportfotografie</h3>
-          <p class="service-desc">
-            Van voetbalwedstrijden tot triatlons en marathons — ik vang de intensiteit, de emotie en de beslissende momenten vast. Met mijn Sony A7 IV en Sigma 70-200mm f/2.8 mis ik geen enkel oogblik.
-          </p>
-          <div class="service-price">
-            Vanaf <strong>€ op aanvraag</strong> per shoot
-          </div>
-          <a href="#contact" class="service-arrow">&#x2197;</a>
-        </div>
-
-        <!-- Dienst 2: Evenementen -->
-        <div class="service-card reveal" style="transition-delay:0.1s">
-          <div class="service-num">02</div>
-          <h3 class="service-name">Evenementenfotografie</h3>
-          <p class="service-desc">
-            Bedrijfsevents, galas, productlanceringen of teambuildings — ik documenteer elk moment op een stijlvolle, authentieke manier zodat uw merk sterk naar voren komt.
-          </p>
-          <div class="service-price">
-            Vanaf <strong>€ op aanvraag</strong> per event
-          </div>
-          <a href="#contact" class="service-arrow">&#x2197;</a>
-        </div>
-
-        <!-- Dienst 3: Commercieel -->
-        <div class="service-card reveal" style="transition-delay:0.15s">
-          <div class="service-num">03</div>
-          <h3 class="service-name">Commerciële fotografie</h3>
-          <p class="service-desc">
-            Beelden voor campagnes, social media, advertenties of interne communicatie. Content die uw doelgroep aanspreekt en uw visuele identiteit versterkt.
-          </p>
-          <div class="service-price">
-            Vanaf <strong>€ op aanvraag</strong> per project
-          </div>
-          <a href="#contact" class="service-arrow">&#x2197;</a>
-        </div>
-
-        <!-- Dienst 4: Andere -->
-        <div class="service-card reveal" style="transition-delay:0.2s">
-          <div class="service-num">04</div>
-          <h3 class="service-name">Op maat</h3>
-          <p class="service-desc">
-            Heeft u een specifiek idee of concept? Ik werk graag samen aan een aanpak die perfect aansluit bij uw noden en budget. Neem contact op voor een vrijblijvend gesprek.
-          </p>
-          <div class="service-price">
-            Prijs <strong>op aanvraag</strong>
-          </div>
-          <a href="#contact" class="service-arrow">&#x2197;</a>
-        </div>
-
+      <div class="p-cat-label">Sport</div>
+      <div class="p-overlay">
+        <span class="p-overlay-cat">// sport</span>
+        <span class="p-overlay-title">Sportfotografie</span>
       </div>
     </div>
-  </section>
 
-  <!-- ══════════════════════════════════════
-       PORTFOLIO
-  ══════════════════════════════════════ -->
-  <section class="portfolio" id="portfolio">
-    <div class="container">
-      <div class="portfolio-header reveal">
-        <div class="section-label"><span>Selectie van werk</span></div>
-        <h2 class="section-title light">Portfolio</h2>
+    <div class="p-item" data-cat="commercial">
+      <div class="p-placeholder">
+        <div class="p-placeholder-icon">▣</div>
+        <span class="p-placeholder-txt">Commercieel / 800 × 600</span>
       </div>
-
-      <!-- Tabs -->
-      <div class="portfolio-tabs reveal">
-        <button class="portfolio-tab active" onclick="filterPortfolio('all', this)">Alles</button>
-        <button class="portfolio-tab" onclick="filterPortfolio('sport', this)">Sport</button>
-        <button class="portfolio-tab" onclick="filterPortfolio('event', this)">Events</button>
-        <button class="portfolio-tab" onclick="filterPortfolio('commercial', this)">Commercieel</button>
-      </div>
-
-      <!--
-        FOTO INSTRUCTIES:
-        Vervang elke .portfolio-placeholder div door een <img> tag:
-        <img src="assets/portfolio/foto-naam.jpg" alt="beschrijving" class="portfolio-photo" />
-        Voeg ook data-category="sport|event|commercial" toe aan .portfolio-item
-
-        Aanbevolen:
-          - Item 1 (groot): 1600 × 1067px
-          - Overige items: 800 × 600px
-          - Formaat: JPG of WebP
-      -->
-      <div class="portfolio-grid" id="portfolio-grid">
-
-        <div class="portfolio-item" data-category="sport">
-          <div class="portfolio-placeholder">
-            <div class="placeholder-icon">&#9635;</div>
-            <span class="placeholder-text">Sport — groot formaat</span>
-          </div>
-          <div class="portfolio-overlay">
-            <span class="portfolio-overlay-text">Sportfotografie</span>
-          </div>
-        </div>
-
-        <div class="portfolio-item" data-category="event">
-          <div class="portfolio-placeholder">
-            <div class="placeholder-icon">&#9635;</div>
-            <span class="placeholder-text">Evenement</span>
-          </div>
-          <div class="portfolio-overlay">
-            <span class="portfolio-overlay-text">Evenementenfotografie</span>
-          </div>
-        </div>
-
-        <div class="portfolio-item" data-category="sport">
-          <div class="portfolio-placeholder">
-            <div class="placeholder-icon">&#9635;</div>
-            <span class="placeholder-text">Sport</span>
-          </div>
-          <div class="portfolio-overlay">
-            <span class="portfolio-overlay-text">Sportfotografie</span>
-          </div>
-        </div>
-
-        <div class="portfolio-item" data-category="commercial">
-          <div class="portfolio-placeholder">
-            <div class="placeholder-icon">&#9635;</div>
-            <span class="placeholder-text">Commercieel</span>
-          </div>
-          <div class="portfolio-overlay">
-            <span class="portfolio-overlay-text">Commercieel</span>
-          </div>
-        </div>
-
-        <div class="portfolio-item" data-category="event">
-          <div class="portfolio-placeholder">
-            <div class="placeholder-icon">&#9635;</div>
-            <span class="placeholder-text">Evenement</span>
-          </div>
-          <div class="portfolio-overlay">
-            <span class="portfolio-overlay-text">Evenementenfotografie</span>
-          </div>
-        </div>
-
-        <div class="portfolio-item" data-category="sport">
-          <div class="portfolio-placeholder">
-            <div class="placeholder-icon">&#9635;</div>
-            <span class="placeholder-text">Sport</span>
-          </div>
-          <div class="portfolio-overlay">
-            <span class="portfolio-overlay-text">Sportfotografie</span>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="portfolio-cta reveal">
-        <a href="#contact" class="btn-outline">Meer zien? Neem contact op</a>
+      <div class="p-cat-label">Commercieel</div>
+      <div class="p-overlay">
+        <span class="p-overlay-cat">// commercieel</span>
+        <span class="p-overlay-title">Commercieel</span>
       </div>
     </div>
-  </section>
 
-  <!-- ══════════════════════════════════════
-       OVER MIJ
-  ══════════════════════════════════════ -->
-  <section class="about" id="over">
-    <div class="container">
-      <div class="about-layout">
-
-        <!-- Foto kolom -->
-        <div class="about-photo reveal">
-          <div class="about-photo-frame">
-            <!--
-              Portretfoto van jezelf:
-              <img src="assets/portret.jpg" alt="Jens van den Berg" style="width:100%;height:100%;object-fit:cover;" />
-
-              Aanbevolen: 800 × 1067px (portret), JPG/WebP
-            -->
-            <div class="about-photo-placeholder">
-              <span style="font-size:2rem; opacity:0.3">&#9635;</span>
-              <span>Portretfoto</span>
-              <span style="font-size:0.7rem; opacity:0.5">800 × 1067 px</span>
-            </div>
-          </div>
-          <div class="about-photo-accent"></div>
-          <div class="about-photo-badge">
-            <div class="about-photo-badge-num">250+</div>
-            <div class="about-photo-badge-label">Opdrachten</div>
-          </div>
-        </div>
-
-        <!-- Tekst kolom -->
-        <div class="about-content reveal" style="transition-delay:0.2s">
-          <div class="section-label"><span>Over mij</span></div>
-          <h2 class="section-title">Het verhaal <em>achter</em> de lens</h2>
-
-          <div class="about-body">
-            <p>
-              Ik ben Jens, 22 jaar, gepassioneerd door sport en storytelling door middel van beelden. Fotografie is voor mij meer dan een vak — het is de manier waarop ik de wereld observeer en bewaar wat anders verloren gaat.
-            </p>
-            <p>
-              Begonnen door gratis shoots aan te bieden bij lokale sportevenementen, bouwde ik stilletjes aan een portfolio dat ondertussen meer dan 250 opdrachten omvat, voor namen als Van der Valk, Roularta en AUDAC.
-            </p>
-            <p>
-              Met mijn Sony A7 IV en Sigma 70-200mm f/2.8 werk ik altijd op locatie, in de echte omstandigheden — want de beste beelden ontstaan nooit in een studio.
-            </p>
-          </div>
-
-          <div class="about-tags">
-            <span class="about-tag">Sony A7 IV</span>
-            <span class="about-tag">Sigma 70-200mm f/2.8</span>
-            <span class="about-tag">Sport</span>
-            <span class="about-tag">Events</span>
-            <span class="about-tag">Commercieel</span>
-            <span class="about-tag">België</span>
-          </div>
-
-          <a href="#contact" class="btn-primary">Werk met mij samen &rarr;</a>
-        </div>
-
+    <div class="p-item" data-cat="event">
+      <div class="p-placeholder">
+        <div class="p-placeholder-icon">▣</div>
+        <span class="p-placeholder-txt">Event / 800 × 600</span>
+      </div>
+      <div class="p-cat-label">Event</div>
+      <div class="p-overlay">
+        <span class="p-overlay-cat">// event</span>
+        <span class="p-overlay-title">Evenement</span>
       </div>
     </div>
-  </section>
 
-  <!-- ══════════════════════════════════════
-       KLANTEN
-  ══════════════════════════════════════ -->
-  <section class="clients">
-    <div class="container">
-      <p class="clients-label">Vertrouwd door</p>
-      <div class="clients-list">
-        <span class="client-name">Van der Valk</span>
-        <span class="client-name">Roularta</span>
-        <span class="client-name">AUDAC</span>
-        <!-- Voeg hier extra klantennamen toe -->
+    <div class="p-item" data-cat="sport">
+      <div class="p-placeholder">
+        <div class="p-placeholder-icon">▣</div>
+        <span class="p-placeholder-txt">Sport / 800 × 600</span>
+      </div>
+      <div class="p-cat-label">Sport</div>
+      <div class="p-overlay">
+        <span class="p-overlay-cat">// sport</span>
+        <span class="p-overlay-title">Sportfotografie</span>
       </div>
     </div>
-  </section>
 
-  <!-- ══════════════════════════════════════
-       CONTACT
-  ══════════════════════════════════════ -->
-  <section class="contact" id="contact">
-    <div class="container">
-      <div class="contact-layout">
+    <div class="p-item" data-cat="commercial">
+      <div class="p-placeholder">
+        <div class="p-placeholder-icon">▣</div>
+        <span class="p-placeholder-txt">Commercieel / 800 × 600</span>
+      </div>
+      <div class="p-cat-label">Commercieel</div>
+      <div class="p-overlay">
+        <span class="p-overlay-cat">// commercieel</span>
+        <span class="p-overlay-title">Commercieel</span>
+      </div>
+    </div>
 
-        <!-- Info kolom -->
-        <div class="contact-info reveal">
-          <div class="section-label"><span>Samenwerken</span></div>
-          <h2 class="section-title light">Laten we iets <em>moois</em> maken</h2>
-          <p class="contact-intro">
-            Of het nu gaat om een eenmalige opdracht of een langdurige samenwerking — ik sta klaar om uw verhaal te vertellen. Vul het formulier in of stuur me een bericht.
-          </p>
-          <div class="contact-detail">
-            <div class="contact-detail-item">
-              <span class="contact-detail-key">E-mail</span>
-              <a href="mailto:info@jensvandenberg.be" class="contact-detail-val">info@jensvandenberg.be</a>
-            </div>
-            <div class="contact-detail-item">
-              <span class="contact-detail-key">Locatie</span>
-              <span class="contact-detail-val">België (rijdt heel het land door)</span>
-            </div>
-            <div class="contact-detail-item">
-              <span class="contact-detail-key">Instagram</span>
-              <a href="https://www.instagram.com/jensvandenbergfotografie" target="_blank" rel="noopener" class="contact-detail-val">@jensvandenbergfotografie</a>
-            </div>
-            <div class="contact-detail-item">
-              <span class="contact-detail-key">TikTok</span>
-              <a href="https://www.tiktok.com/@jensvandenbergfotografie" target="_blank" rel="noopener" class="contact-detail-val">@jensvandenbergfotografie</a>
-            </div>
-          </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     OVER MIJ
+══════════════════════════════ -->
+<section id="over">
+  <div class="about">
+
+    <div class="about-photo-wrap reveal left">
+      <div class="about-photo-inner">
+        <!--
+          VERVANG door: <img src="assets/portret.jpg" alt="Jens van den Berg" />
+          Aanbevolen: 800 × 1067px
+        -->
+        <div class="about-photo-placeholder">
+          <span style="font-size:2.5rem;opacity:0.15">▣</span>
+          <span>Portretfoto — 800 × 1067 px</span>
         </div>
+      </div>
+      <div class="about-badge">
+        <div class="about-badge-num">250+</div>
+        <div class="about-badge-lbl">Opdrachten</div>
+      </div>
+      <div class="about-gear-tag">
+        <strong>Sony A7 IV</strong>
+        Sigma 70-200mm f/2.8
+      </div>
+    </div>
 
-        <!-- Formulier -->
-        <div class="contact-form reveal" style="transition-delay:0.2s">
-          <form id="contact-form" onsubmit="handleSubmit(event)">
-            <div class="form-row">
-              <div class="form-group">
-                <label class="form-label" for="naam">Naam *</label>
-                <input class="form-input" type="text" id="naam" name="naam" placeholder="Uw naam" required />
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="email">E-mail *</label>
-                <input class="form-input" type="email" id="email" name="email" placeholder="uw@email.be" required />
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="type">Type shoot *</label>
-                <select class="form-select" id="type" name="type" required>
-                  <option value="" disabled selected>Selecteer een optie</option>
-                  <option value="sport">Sportfotografie</option>
-                  <option value="event">Evenementenfotografie</option>
-                  <option value="commercial">Commerciële fotografie</option>
-                  <option value="other">Ander / Op maat</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="datum">Datum (optioneel)</label>
-                <input class="form-input" type="date" id="datum" name="datum" />
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="budget">Budget indicatie</label>
-                <select class="form-select" id="budget" name="budget">
-                  <option value="" disabled selected>Selecteer een range</option>
-                  <option value="lt500">Minder dan €500</option>
-                  <option value="500-1000">€500 — €1.000</option>
-                  <option value="1000-2500">€1.000 — €2.500</option>
-                  <option value="gt2500">Meer dan €2.500</option>
-                  <option value="unknown">Nog niet bepaald</option>
-                </select>
-              </div>
-              <div class="form-group full">
-                <label class="form-label" for="bericht">Bericht *</label>
-                <textarea class="form-textarea" id="bericht" name="bericht" placeholder="Vertel me meer over uw project, locatie en verwachtingen..." required></textarea>
-              </div>
-            </div>
-            <button type="submit" class="btn-primary form-submit">Verzenden &rarr;</button>
-          </form>
-          <p id="form-success" style="display:none; color:#c9a84c; text-align:center; margin-top:1rem; font-size:0.9rem; letter-spacing:0.05em;">
-            ✓ Bericht verzonden. Ik neem zo snel mogelijk contact op.
-          </p>
+    <div class="about-text reveal right">
+      <p class="section-kicker">// over mij</p>
+      <h2 class="section-title">HET VERHAAL<br /><span class="stroke">ACHTER</span><br />DE LENS</h2>
+
+      <div class="about-body">
+        <p>Ik ben Jens, 22 jaar, en fotografie is de manier waarop ik de wereld observeer en bewaar wat anders verloren gaat. Begonnen door gratis shoots aan te bieden bij lokale sportevenementen, bouwde ik stilletjes aan een portfolio dat ondertussen meer dan 250 opdrachten omvat.</p>
+        <p>Voor namen als Van der Valk, Roularta en AUDAC. Altijd op locatie, altijd in de echte omstandigheden — want de beste beelden ontstaan nooit in een studio.</p>
+      </div>
+
+      <div class="about-tags">
+        <span class="about-tag">Sony A7 IV</span>
+        <span class="about-tag">Sigma 70-200mm f/2.8</span>
+        <span class="about-tag">Sport</span>
+        <span class="about-tag">Events</span>
+        <span class="about-tag">Commercieel</span>
+        <span class="about-tag">België</span>
+      </div>
+
+      <a href="#contact" class="btn btn-red">Werk met mij →</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     KLANTEN
+══════════════════════════════ -->
+<div class="clients reveal">
+  <p class="clients-label">// vertrouwd door</p>
+  <div class="clients-row">
+    <span class="client">Van der Valk</span>
+    <span class="client">Roularta</span>
+    <span class="client">AUDAC</span>
+  </div>
+</div>
+
+<!-- ══════════════════════════════
+     CONTACT
+══════════════════════════════ -->
+<section class="contact" id="contact">
+
+  <div class="reveal left">
+    <p class="section-kicker">// samenwerken</p>
+    <h2 class="contact-big">
+      LATEN<br />WE IETS<br /><span class="stroke">MAKEN</span>
+    </h2>
+
+    <div class="contact-info-list">
+      <div class="contact-info-item">
+        <span class="ci-key">E-mail</span>
+        <span class="ci-val"><a href="mailto:info@jensvandenberg.be">info@jensvandenberg.be</a></span>
+      </div>
+      <div class="contact-info-item">
+        <span class="ci-key">Locatie</span>
+        <span class="ci-val">België — rijdt heel het land door</span>
+      </div>
+      <div class="contact-info-item">
+        <span class="ci-key">Instagram</span>
+        <span class="ci-val">
+          <a href="https://www.instagram.com/jensvandenbergfotografie" target="_blank" rel="noopener">@jensvandenbergfotografie</a>
+        </span>
+      </div>
+      <div class="contact-info-item">
+        <span class="ci-key">TikTok</span>
+        <span class="ci-val">
+          <a href="https://www.tiktok.com/@jensvandenbergfotografie" target="_blank" rel="noopener">@jensvandenbergfotografie</a>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-form-wrap reveal right">
+    <form class="cform" id="cform" onsubmit="sendForm(event)">
+
+      <div class="cfield-row">
+        <div class="cfield">
+          <label class="cfield-label" for="naam">Naam *</label>
+          <input type="text" id="naam" name="naam" placeholder="Uw naam" required />
         </div>
-
+        <div class="cfield">
+          <label class="cfield-label" for="email">E-mail *</label>
+          <input type="email" id="email" name="email" placeholder="uw@email.be" required />
+        </div>
       </div>
-    </div>
-  </section>
 
-  <!-- ══════════════════════════════════════
-       FOOTER
-  ══════════════════════════════════════ -->
-  <footer class="footer">
-    <div class="footer-inner">
-      <div class="footer-logo">
-        Jens <span>van den Berg</span> Fotografie
+      <div class="cfield-row">
+        <div class="cfield">
+          <label class="cfield-label" for="type">Type shoot *</label>
+          <select id="type" name="type" required>
+            <option value="" disabled selected>Kies een optie</option>
+            <option value="sport">Sportfotografie</option>
+            <option value="event">Evenementenfotografie</option>
+            <option value="commercial">Commerciële fotografie</option>
+            <option value="other">Op maat</option>
+          </select>
+        </div>
+        <div class="cfield">
+          <label class="cfield-label" for="datum">Datum</label>
+          <input type="date" id="datum" name="datum" />
+        </div>
       </div>
-      <ul class="footer-links">
-        <li><a href="#diensten">Diensten</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#over">Over mij</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="https://www.instagram.com/jensvandenbergfotografie" target="_blank" rel="noopener">Instagram</a></li>
-        <li><a href="https://www.tiktok.com/@jensvandenbergfotografie" target="_blank" rel="noopener">TikTok</a></li>
-      </ul>
-      <p class="footer-copy">&copy; 2025 jensvandenberg.be</p>
-    </div>
-  </footer>
 
-  <!-- ══════════════════════════════════════
-       JAVASCRIPT
-  ══════════════════════════════════════ -->
-  <script>
-    /* ── Custom cursor ── */
-    const cursor     = document.getElementById('cursor');
-    const cursorRing = document.getElementById('cursor-ring');
-    document.addEventListener('mousemove', e => {
-      cursor.style.left     = e.clientX + 'px';
-      cursor.style.top      = e.clientY + 'px';
-      cursorRing.style.left = e.clientX + 'px';
-      cursorRing.style.top  = e.clientY + 'px';
+      <div class="cfield">
+        <label class="cfield-label" for="budget">Budget indicatie</label>
+        <select id="budget" name="budget">
+          <option value="" disabled selected>Selecteer een range</option>
+          <option value="lt500">Minder dan €500</option>
+          <option value="500-1000">€500 — €1.000</option>
+          <option value="1000-2500">€1.000 — €2.500</option>
+          <option value="gt2500">Meer dan €2.500</option>
+          <option value="unknown">Nog niet bepaald</option>
+        </select>
+      </div>
+
+      <div class="cfield">
+        <label class="cfield-label" for="bericht">Bericht *</label>
+        <textarea id="bericht" name="bericht" placeholder="Vertel over uw project, locatie en verwachtingen..." required></textarea>
+      </div>
+
+      <div class="form-submit-row">
+        <span class="form-note">* verplichte velden</span>
+        <button type="submit" class="btn btn-red">Verzenden →</button>
+      </div>
+
+      <p id="form-ok">✓ Bericht verzonden. Ik neem zo snel mogelijk contact op.</p>
+    </form>
+  </div>
+
+</section>
+
+<!-- ══════════════════════════════
+     FOOTER
+══════════════════════════════ -->
+<footer class="footer">
+  <div class="footer-logo">JVDB<span class="red">.</span></div>
+  <ul class="footer-links">
+    <li><a href="#diensten">Diensten</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#over">Over</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="https://www.instagram.com/jensvandenbergfotografie" target="_blank" rel="noopener">Instagram</a></li>
+    <li><a href="https://www.tiktok.com/@jensvandenbergfotografie" target="_blank" rel="noopener">TikTok</a></li>
+  </ul>
+  <p class="footer-copy">© 2025 jensvandenberg.be</p>
+</footer>
+
+<!-- ══════════════════════════════
+     JAVASCRIPT
+══════════════════════════════ -->
+<script>
+  /* ── Loader ── */
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      document.getElementById('loader').classList.add('hidden');
+    }, 1800);
+  });
+
+  /* ── Nav scroll ── */
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.style.mixBlendMode = window.scrollY > 80 ? 'normal' : 'difference';
+  }, { passive: true });
+
+  /* ── Mobile menu ── */
+  document.getElementById('burger').addEventListener('click', () =>
+    document.getElementById('mobile-menu').classList.add('open')
+  );
+  document.getElementById('mobile-close').addEventListener('click', () =>
+    document.getElementById('mobile-menu').classList.remove('open')
+  );
+  document.querySelectorAll('.mobile-menu a').forEach(a =>
+    a.addEventListener('click', () =>
+      document.getElementById('mobile-menu').classList.remove('open')
+    )
+  );
+
+  /* ── Scroll reveal ── */
+  const revealObs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        revealObs.unobserve(e.target);
+      }
     });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
 
-    /* ── Nav scroll effect ── */
-    const nav = document.getElementById('main-nav');
+  /* ── Portfolio filter ── */
+  function filter(cat, btn) {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('.p-item').forEach(item => {
+      const show = cat === 'all' || item.dataset.cat === cat;
+      item.style.transition = 'opacity 0.35s, transform 0.35s';
+      item.style.opacity = show ? '1' : '0.15';
+      item.style.transform = show ? 'scale(1)' : 'scale(0.97)';
+      item.style.pointerEvents = show ? 'auto' : 'none';
+    });
+  }
+
+  /* ── Service card click → contact ── */
+  document.querySelectorAll('.service').forEach(s => {
+    s.addEventListener('click', () => {
+      document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+
+  /* ── Contact form ── */
+  function sendForm(e) {
+    e.preventDefault();
+    /* Koppel hier Formspree: action="https://formspree.io/f/YOURCODE" */
+    document.getElementById('cform').style.display = 'none';
+    document.getElementById('form-ok').style.display = 'block';
+  }
+
+  /* ── Smooth anchor scroll ── */
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const t = document.querySelector(a.getAttribute('href'));
+      if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth' }); }
+    });
+  });
+
+  /* ── Subtle parallax on hero slash ── */
+  const slash = document.querySelector('.hero-slash');
+  if (slash) {
     window.addEventListener('scroll', () => {
-      nav.classList.toggle('scrolled', window.scrollY > 60);
+      slash.style.transform = `skewX(-8deg) translateY(${window.scrollY * 0.12}px)`;
+    }, { passive: true });
+  }
+
+  /* ── Glitch effect on section titles (hover) ── */
+  document.querySelectorAll('.section-title, .contact-big').forEach(el => {
+    el.addEventListener('mouseenter', () => {
+      el.style.textShadow = `2px 0 var(--accent), -2px 0 rgba(245,200,66,0.5)`;
+      setTimeout(() => el.style.textShadow = '', 180);
     });
+  });
 
-    /* ── Mobile menu ── */
-    const burger    = document.getElementById('burger');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const mobileClose = document.getElementById('mobile-close');
-    burger.addEventListener('click', () => mobileMenu.classList.add('open'));
-    mobileClose.addEventListener('click', () => mobileMenu.classList.remove('open'));
-    document.querySelectorAll('.mobile-link').forEach(l =>
-      l.addEventListener('click', () => mobileMenu.classList.remove('open'))
-    );
-
-    /* ── Scroll reveal ── */
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.classList.add('visible');
-          observer.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.12 });
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
-    /* ── Portfolio filter ── */
-    function filterPortfolio(cat, btn) {
-      document.querySelectorAll('.portfolio-tab').forEach(t => t.classList.remove('active'));
-      btn.classList.add('active');
-      document.querySelectorAll('.portfolio-item').forEach(item => {
-        const show = cat === 'all' || item.dataset.category === cat;
-        item.style.opacity    = show ? '1' : '0.2';
-        item.style.transform  = show ? 'scale(1)' : 'scale(0.97)';
-        item.style.transition = 'opacity 0.35s, transform 0.35s';
-        item.style.pointerEvents = show ? 'auto' : 'none';
-      });
-    }
-
-    /* ── Contact form ── */
-    function handleSubmit(e) {
-      e.preventDefault();
-      const form = document.getElementById('contact-form');
-      const success = document.getElementById('form-success');
-      /* Hier koppel je later Formspree, Netlify Forms of een eigen backend */
-      form.style.display    = 'none';
-      success.style.display = 'block';
-    }
-
-    /* ── Smooth scroll voor ankerlinks ── */
-    document.querySelectorAll('a[href^="#"]').forEach(a => {
-      a.addEventListener('click', e => {
-        const target = document.querySelector(a.getAttribute('href'));
-        if (target) {
-          e.preventDefault();
-          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      });
+  /* ── Cursor skew on mouse move ── */
+  document.addEventListener('mousemove', e => {
+    const xRel = (e.clientX / window.innerWidth - 0.5) * 2;
+    document.querySelectorAll('.hero-title').forEach(el => {
+      el.style.transform = `skewX(${xRel * 0.8}deg)`;
     });
-  </script>
+  });
+</script>
 
 </body>
 </html>
